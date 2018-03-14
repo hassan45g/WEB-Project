@@ -46,24 +46,70 @@
 export default {
   data: () => ({
     filteredRestaurants: [
-      {title: 'Martin Berasategui', cuisine: 'Italian', img: require('@/assets/Restaurants/r1.jpg'), location:'Spain'},
-      {title: 'Maison Lameloise', cuisine: 'Continental', img: require('@/assets/Restaurants/r2.jpeg'), location:'France'},
-      {title: 'Alacarte', cuisine: 'Italian', img: require('@/assets/Restaurants/r3.jpeg'), location:'United Kingdom'},
-      {title: 'Xiang Chui', cuisine: 'Chinese', img: require('@/assets/Restaurants/r4.jpeg'), location:'China'}
+      {
+        title: 'Martin Berasategui', 
+        cuisine: 'Italian', 
+        img: require('@/assets/Restaurants/r1.jpg'), 
+        location:'Spain'
+      },
+      {
+        title: 'Maison Lameloise',
+        cuisine: 'Continental', 
+        img: require('@/assets/Restaurants/r2.jpeg'), 
+        location:'France'
+      },
+      {
+        title: 'Alacarte', 
+        cuisine: 'Italian', 
+        img: require('@/assets/Restaurants/r3.jpeg'), 
+        location:'United Kingdom'
+      },
+      {
+        title: 'Xiang Chui', 
+        cuisine: 'Chinese', 
+        img: require('@/assets/Restaurants/r4.jpeg'), 
+        location:'China'
+      }
     ],
     restaurantsList: [
-      {title: 'Martin Berasategui', cuisine: 'Italian', img: require('@/assets/Restaurants/r1.jpg'), location:'Spain'},
-      {title: 'Maison Lameloise', cuisine: 'Continental', img: require('@/assets/Restaurants/r2.jpeg'), location:'France'},
-      {title: 'Alacarte', cuisine: 'Italian', img: require('@/assets/Restaurants/r3.jpeg'), location:'United Kingdom'},
-      {title: 'Xiang Chui', cuisine: 'Chinese', img: require('@/assets/Restaurants/r4.jpeg'), location:'China'}
+      {
+        title: 'Martin Berasategui', 
+        cuisine: 'Italian', 
+        img: require('@/assets/Restaurants/r1.jpg'), 
+        location:'Spain'
+      },
+      {
+        title: 'Maison Lameloise', 
+        cuisine: 'Continental', 
+        img: require('@/assets/Restaurants/r2.jpeg'), 
+        location:'France'
+      },
+      {
+        title: 'Alacarte', 
+        cuisine: 'Italian', 
+        img: require('@/assets/Restaurants/r3.jpeg'), 
+        location:'United Kingdom'
+      },
+      {
+        title: 'Xiang Chui', 
+        cuisine: 'Chinese', 
+        img: require('@/assets/Restaurants/r4.jpeg'), 
+        location:'China'
+      }
     ],
     search:undefined
   }),
     methods:{
-      test(){console.log('Hello')},
-      filterRest(){
-        this.filteredRestaurants = this.restaurantsList.filter((item) => {
-          if (item.title.toLowerCase().includes(this.search.toLowerCase())) {
+      test() 
+      {
+        console.log('Hello')
+      },
+      filterRest() 
+      {
+        this.filteredRestaurants = this.restaurantsList.filter((item) => 
+        {
+          if (item.title.toLowerCase().includes(this.search.toLowerCase())) 
+          {
             return true;
           }
           else if (item.location.toLowerCase().includes(this.search.toLowerCase())) 
