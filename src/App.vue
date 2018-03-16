@@ -71,12 +71,42 @@ export default {
       sideNav: false,
       mActivePage:'',
       menuItems: [
-        { icon: 'home' , title: 'Home', link:'/' , isActive: true},
-        { icon: 'flight' , title: 'Travel' , link: '/travel' , isActive: false},
-        { icon: 'restaurant_menu' , title: 'Restaurants' , link:'/restaurants' , isActive: false},
-        { icon: 'location_city' , title: 'Hotels' , link: '/hotels' , isActive: false},
-        { icon: 'face' , title: 'Sign Up' , link: '/signup' , isActive: false},
-        { icon: 'lock_open' , title: 'Log In' , link: '/login' , isActive: false},
+        { 
+          icon: 'home' ,
+          title: 'Home', 
+          link:'/' , 
+          isActive: true
+        },
+        { 
+          icon: 'flight' ,
+          title: 'Travel' ,
+          link: '/travel' , 
+          isActive: false
+        },
+        { 
+          icon: 'restaurant_menu' , 
+          title: 'Restaurants' , 
+          link:'/restaurants' , 
+          isActive: false
+        },
+        { 
+          icon: 'location_city' , 
+          title: 'Hotels' , 
+          link: '/hotels' , 
+          isActive: false
+        },
+        { 
+          icon: 'face' , 
+          title: 'Sign Up' , 
+          link: '/signup' , 
+          isActive: false
+        },
+        { 
+          icon: 'lock_open' , 
+          title: 'Log In' , 
+          link: '/login' , 
+          isActive: false
+        },
       ]
     }
   },
